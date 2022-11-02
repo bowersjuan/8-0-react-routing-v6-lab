@@ -37,7 +37,6 @@ function App() {
             path="/stafflist"
             element={<StaffList employees={employees} />}
           />
-
           <Route path="/petslist" element={<PetsList pets={pets} />} />
         </Routes>
         <Footer />
