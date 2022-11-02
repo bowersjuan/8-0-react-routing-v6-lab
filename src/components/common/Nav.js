@@ -14,7 +14,7 @@ function Nav() {
       <aside>
         <ul>
           <li>
-            <Link to="/stafflist">All Staff</Link>
+            <Link to="/staff">All Staff</Link>
           </li>
           <li>
             <Link to="/petslist">All Pets</Link>

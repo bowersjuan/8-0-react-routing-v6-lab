@@ -33,11 +33,18 @@ function App() {
             path="/"
             element={<Home employees={employees} owners={owners} pets={pets} />}
           />
-          <Route
-            path="/stafflist"
-            element={<StaffList employees={employees} />}
-          />
+          <Route path="/staff" element={<StaffList employees={employees} />} />
           <Route path="/petslist" element={<PetsList pets={pets} />} />
+          <Route
+            path="/pets/:type"
+            element={<PetsList pets={pets} />}
+            type="Cats"
+          />
+          <Route
+            path="/pets/:type"
+            element={<PetsList pets={pets} />}
+            type="Dogs"
+          />
         </Routes>
         <Footer />
       </Router>
